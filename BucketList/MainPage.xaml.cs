@@ -1,4 +1,5 @@
 ﻿using BucketList.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -24,11 +26,16 @@ namespace BucketList
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private ObservableCollection<Item> SampleItems;
+        public ObservableCollection<Item> SampleItems;
         public MainPage()
         {
             this.InitializeComponent();
             SampleItems = Samples.PopulateSamples();
+            ResultTextBlock.Text = "Saving List To Storage"; // Just for debugging purposes
+            FileOperations.SaveListToStorage(SampleItems);
+            ResultTextBlock.Text = "Item List Was Saved To Local Storage"; // Just for debugging purposes
+           // SampleItems = FileOperations.GetListFromStorage();  // SampleItems = FileOperations.GetListFromStorage().Result;
+           // Adding Result defeats purpose of Await and causes a cumulative exception  - try to find alternative solution
         }
 
         private void Hamburger_Click(object sender, RoutedEventArgs e)

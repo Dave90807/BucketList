@@ -1,9 +1,13 @@
-﻿using System;
+﻿using BucketList;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Storage;
 
 namespace BucketList.Models
 {
@@ -12,8 +16,24 @@ namespace BucketList.Models
         public int ItemKey { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public DateTime EditDate { get; set; }
+        public DateTime CompletedDate { get; set; }
+        public bool Completed { get; set; }
         public string PhotoMain { get; set; }
         public int Priority { get; set; }
+
+        public Item(int ItemKey, string Name, string Description, DateTime EditDate, DateTime CompletedDate, string PhotoMain, bool Completed,  int Priority)
+        {
+            this.ItemKey = ItemKey;
+            this.Name = Name;
+            this.Description = Description;
+            this.EditDate = Convert.ToDateTime(EditDate);
+            this.CompletedDate = Convert.ToDateTime(CompletedDate);
+            this.PhotoMain = PhotoMain; // = "/Assets/BlankPhoto.jpg";
+            this.Completed = false;
+            this.Priority = Priority;
+        }
+        public Item() { }
     }
 
     public class Samples
@@ -42,6 +62,30 @@ namespace BucketList.Models
                 "Assets/MidiMusic.jpg", Priority = 5 };
             samples.Add(itemFive);
             return samples;
+        }
+    }
+
+    public class FileOperations
+    {
+        public static async void SaveListToStorage(ObservableCollection<Item> sampleItems)
+        {
+            StorageFolder localFolder = ApplicationData.Current.LocalFolder;
+            StorageFile OutPutFile = await localFolder.CreateFileAsync("Data.json", CreationCollisionOption.ReplaceExisting);
+            string outPutJSON = "";
+            foreach (Item item in sampleItems)
+            {
+                outPutJSON = outPutJSON + JsonConvert.SerializeObject(item);
+            }
+            await FileIO.WriteTextAsync(OutPutFile, outPutJSON);
+        }
+
+        public static async Task<ObservableCollection<Item>> GetListFromStorage()
+        {
+            StorageFolder localFolder = ApplicationData.Current.LocalFolder;
+            StorageFile InPutFile = await localFolder.GetFileAsync("Data.json");
+            string JSONstring = await FileIO.ReadTextAsync(InPutFile);
+            ObservableCollection<Item> sampleItems1 = JsonConvert.DeserializeObject<ObservableCollection<Item>>(JSONstring);
+            return sampleItems1;
         }
     }
 }

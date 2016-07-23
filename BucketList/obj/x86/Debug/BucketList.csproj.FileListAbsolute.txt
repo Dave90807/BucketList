@@ -382,3 +382,4 @@ C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\Bucket
 C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\bin\x86\Debug\Newtonsoft.Json.dll

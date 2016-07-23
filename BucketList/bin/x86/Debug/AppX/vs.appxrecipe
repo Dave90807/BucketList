@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-15T15:45:12.658</Modified>
+      <Modified>2016-07-23T03:13:35.589</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\bin\x86\Debug\BucketList.exe">
       <PackagePath>entrypoint\BucketList.exe</PackagePath>
-      <Modified>2016-07-15T15:45:07.392</Modified>
+      <Modified>2016-07-23T03:13:34.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dave9\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -95,6 +95,10 @@
     <AppxPackagedFile Include="C:\Users\dave9\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2016-02-09T17:03:48.070</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dave9\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-06-14T06:06:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dave9\.nuget\packages\System.AppContext\4.0.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -520,7 +524,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\bin\x86\Debug\BucketList.xr.xml">
       <PackagePath>BucketList.xr.xml</PackagePath>
-      <Modified>2016-07-08T05:21:32.000</Modified>
+      <Modified>2016-07-22T23:45:43.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -528,11 +532,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-15T15:45:11.217</Modified>
+      <Modified>2016-07-23T00:22:01.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dave9\Documents\Visual Studio 2015\Projects\Universal\BucketList\BucketList\bin\x86\Debug\Core\BucketList.exe">
       <PackagePath>BucketList.exe</PackagePath>
-      <Modified>2016-07-15T15:45:12.643</Modified>
+      <Modified>2016-07-23T03:13:35.575</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
