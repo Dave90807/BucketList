@@ -29,7 +29,7 @@ namespace BucketList.Models
             this.Description = Description;
             this.EditDate = Convert.ToDateTime(EditDate);
             this.CompletedDate = Convert.ToDateTime(CompletedDate);
-            this.PhotoMain = PhotoMain; // = "/Assets/BlankPhoto.jpg";
+            this.PhotoMain = PhotoMain; // = "/Assets/BlankPhoto.jpg"; changing to "/Images...
             this.Completed = false;
             this.Priority = Priority;
         }
@@ -43,23 +43,23 @@ namespace BucketList.Models
             var samples = new ObservableCollection<Item>();
             Item itemOne = new Item { ItemKey = 1, Name = "Camping", Description = 
                 "Rent a trailer or camper for a weekend outing.", PhotoMain =
-                "Assets/camper.jpg", Priority = 10 };
+                "Images/camper.jpg", Priority = 10 };
             samples.Add(itemOne);
             Item itemTwo = new Item { ItemKey = 2, Name = "Play Piano", Description =
                 "Increase piano repetoire with various forms of music.", PhotoMain =
-                "Assets/ElectricKeyboard.jpg", Priority = 1 };
+                "Images/ElectricKeyboard.jpg", Priority = 1 };
             samples.Add(itemTwo);
             Item itemThree = new Item {ItemKey = 3, Name = "Play Violin", Description =
                 "Increase ability to make music with the electric violin.", PhotoMain =
-                "Assets/CecelioViolin.jpg", Priority = 5 };
+                "Images/CecelioViolin.jpg", Priority = 5 };
             samples.Add(itemThree);
             Item itemFour = new Item {ItemKey = 4, Name = "Practice French", Description =
                 "Impliment various ways to increase vocabulary and grammar.", PhotoMain =
-                "Assets/France.jpg", Priority = 2 };
+                "Images/France.jpg", Priority = 2 };
             samples.Add(itemFour);
             Item itemFive = new Item {ItemKey = 5, Name = "Practice Midi", Description =
                 "Practice midi Software developing as a tool to help master complex musical forms.", PhotoMain =
-                "Assets/MidiMusic.jpg", Priority = 5 };
+                "Images/MidiMusic.jpg", Priority = 5 };
             samples.Add(itemFive);
             return samples;
         }

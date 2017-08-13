@@ -89,6 +89,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="Dave90807Key.snk" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -108,14 +109,14 @@
     <None Include="BucketList_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Camper.JPG" />
-    <Content Include="Assets\CecelioViolin.JPG" />
-    <Content Include="Assets\ElectricKeyboard.JPG" />
-    <Content Include="Assets\France.JPG" />
-    <Content Include="Assets\French.JPG" />
-    <Content Include="Assets\MidiMusic.JPG" />
-    <Content Include="Assets\NewOrleans.JPG" />
-    <Content Include="Assets\Programming.JPG" />
+    <Content Include="Images\Camper.JPG" />
+    <Content Include="Images\CecelioViolin.JPG" />
+    <Content Include="Images\ElectricKeyboard.JPG" />
+    <Content Include="Images\France.JPG" />
+    <Content Include="Images\French.JPG" />
+    <Content Include="Images\MidiMusic.JPG" />
+    <Content Include="Images\NewOrleans.JPG" />
+    <Content Include="Images\Programming.JPG" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -135,6 +136,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
@@ -142,7 +144,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>BucketList_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Dave90807Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,13 +1,5 @@
 WinMetadata\Windows.winmd
-Assets\Camper.JPG
-Assets\CecelioViolin.JPG
-Assets\ElectricKeyboard.JPG
-Assets\France.JPG
-Assets\French.JPG
 Assets\LockScreenLogo.scale-200.png
-Assets\MidiMusic.JPG
-Assets\NewOrleans.JPG
-Assets\Programming.JPG
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
@@ -15,4 +7,12 @@ Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 Assets\StoreLogo.png
 Assets\Wide310x150Logo.scale-200.png
 BucketList.xr.xml
+Images\Camper.JPG
+Images\CecelioViolin.JPG
+Images\ElectricKeyboard.JPG
+Images\France.JPG
+Images\French.JPG
+Images\MidiMusic.JPG
+Images\NewOrleans.JPG
+Images\Programming.JPG
 Properties\Default.rd.xml
